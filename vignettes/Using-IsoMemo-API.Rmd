@@ -1,0 +1,58 @@
+---
+title: "How to Use IsoMemo for Researchers"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How to Use IsoMemo for Reseachers}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+- `getRemoteDataAPI()` retrieves the API to query the data
+- `getMappingAPI()` calls the mapping for the fields needed from the user API calls
+- `getDatabaseList()` returns a list of database names linked to the API call
+- `callAPI()` initiates the request to call 
+```{r setup}
+library(IsoMemo)
+getDatabaseList() # returns a character format of list of database names linked to the API call
+```
+
+```{r explore data}
+df = getData(db="IntChron",category = "Location")
+# see latitude and longitude of each site
+head(df)
+```
+The function below retrieves ALL data and fields from all existing databases.
+```{r all data}
+# ALL_DATA = getData()
+# print(nrow(ALL_DATA)) # check how many rows
+# levels(ALL_DATA$source) # check all the database sources are there
+```
+
+
+### Let's explore another database: LiVES
+```{r descriptives}
+getDatabaseList() # tells what database are currently published
+
+df1 = getData('LiVES')
+summary(df1)
+```
+
+
+How is the distribution of the variable "d15N" isotope?
+```{r hist}
+hist(df1$d15N)
+```
+
+
+Let's see the linear relationship between variables d13C and d15N:
+```{r regression}
+df1 <- na.omit(df1)
+lm(d13C~d15N,data=df1)
+
+```
