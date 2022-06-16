@@ -1,9 +1,10 @@
 #' @title API wrapper that fetches data from IsoMemo Applications
 #'
-#' @description Data retrieval for the IsoMemo App Project https://isomemoapp.com/
-#' Given the parameters Database name, category names, and field names.
+#' @description Data retrieval for databases within the IsoMemo initiative (https://isomemo.com/). Given the parameters Database
+#' name, category names, and field names.
 #'
-#' @param db database options: "14CSea" ,  "IntChron" , "IsoArcH" , "LiVES"
+#'
+#' @param db database options:  "14CSea"   "CIMA"     "IntChron" "LiVES"
 #' @param category domain specific categories of fields to retrieve: "Dating info","Isotopic proxies." If set to NULL (default) all categories are returned
 #' @param field fields to return. If set to NULL (default) all fields will be returned
 #'

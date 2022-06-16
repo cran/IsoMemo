@@ -1,3 +1,14 @@
+# IsoMemo 1.0.6
+
+## Corrections with name changes and corrections:
+- Name changes:
+  - Where it says "Retrieve Data using the Max Plank Institute 'IsoMemo' API" change this to: "Retrieve Data using the 'IsoMemo' API". This is in the pdf and in the title of the webpage.
+
+- Where it says"database options: "14CSea" , "IntChron" , "IsoArcH" , "LiVES" change to "examples of database options: "14CSea" , "IntChron" , "CIMA" , "LiVES"
+
+- Where it says "Data retrieval for the IsoMemo App Project https://isomemoapp.com/ Given the parameters Database
+name, category names, and field names." changed to "Data retrieval for databases within the IsoMemo initiative (https://isomemo.com/). Given the parameters Database name, category names, and field names."
+
 # IsoMemo 1.0.5
 
 ## Features

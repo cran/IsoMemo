@@ -7,7 +7,7 @@
 getData(db = getDatabaseList(), category = NULL, field = NULL)
 }
 \arguments{
-\item{db}{database options: "14CSea" ,  "IntChron" , "IsoArcH" , "LiVES"}
+\item{db}{database options:  "14CSea"   "CIMA"     "IntChron" "LiVES"}
 
 \item{category}{domain specific categories of fields to retrieve: "Dating info","Isotopic proxies." If set to NULL (default) all categories are returned}
 
@@ -17,8 +17,8 @@ getData(db = getDatabaseList(), category = NULL, field = NULL)
 A data frame containing the requested databases, category domains, and variables of interest from the user
 }
 \description{
-Data retrieval for the IsoMemo App Project https://isomemoapp.com/
-Given the parameters Database name, category names, and field names.
+Data retrieval for databases within the IsoMemo initiative (https://isomemo.com/). Given the parameters Database
+name, category names, and field names.
 }
 \examples{
 getData(db = "IntChron")
