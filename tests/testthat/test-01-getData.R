@@ -4,5 +4,6 @@ test_that("getData() actually retrieves all data", {
   expect_match(levels(df$source)[2],"CIMA")
   expect_match(levels(df$source)[3],"IntChron")
   expect_match(levels(df$source)[4],"LiVES")
-  expect_warning(getData(db="IntChron",category = "Location", field = 'measure'),NULL)
+  expect_type(getData(db="IntChron",category = "Location", field = "latitude")[[1]], "double")
+  expect_warning(getData(db="IntChron",category = "Location", field = "measure"),NULL)
 })

@@ -9,9 +9,9 @@ library(IsoMemo)
 getDatabaseList() # returns a character format of list of database names linked to the API call
 
 ## ----explore data-------------------------------------------------------------
-df = getData(db="IntChron",category = "Location")
+df = getData(db = "IntChron", category = "Location", field = "latitude", mapping = "IsoMemo")
 # see latitude and longitude of each site
-head(df)
+summary(df)
 
 ## ----all data-----------------------------------------------------------------
 # ALL_DATA = getData()

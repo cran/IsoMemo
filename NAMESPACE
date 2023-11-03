@@ -3,4 +3,7 @@
 export(getData)
 export(getDatabaseList)
 export(getFields)
+export(getMappings)
+import(curl)
 importFrom(jsonlite,fromJSON)
+importFrom(modules,module)

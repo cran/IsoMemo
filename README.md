@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/Pandora-IsoMemo/isomemo-data/workflows/R-CMD-check/badge.svg)](https://github.com/Pandora-IsoMemo/isomemo-data/actions)
+[![R-CMD-check](https://github.com/Pandora-IsoMemo/isomemo-data/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Pandora-IsoMemo/isomemo-data/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 IsoMemo is a Big Data initiative bringing together isotopic data from
@@ -28,16 +28,15 @@ information and access all IsoMemo Apps: <https://isomemoapp.com/>
 
 *Isomemo Project Director:*
 
--   Dr. Ricardo Fernandes: <fernandes@shh.mpg.de>
--   Max Planck Institute for the Science of Human History. School of
-    Archaeology (University of Oxford)
+- Dr. Ricardo Fernandes: <fernandes@shh.mpg.de>
+- Max Planck Institute for the Science of Human History. School of
+  Archaeology (University of Oxford)
 
 *Developer*: INWT Statistics GmbH
 
--   API developer: Andreas Neudecker, INWT
-    <andreas.neudecker@inwt-statistics.de>
--   Maintainer: Jianyin Roachell, INWT
-    <jianyin.roachell@inwt-statistics.de>
+- API developer: Andreas Neudecker, INWT
+  <andreas.neudecker@inwt-statistics.de>
+- Maintainer: Jan Abel, INWT <abel.jan@inwt-statistics.de>
 
 ## Installation
 
@@ -46,13 +45,8 @@ You can install the released version of IsoMemo from
 
 ``` r
 install.packages("IsoMemo")
-#> Installing package into '/nethome/jroachell/R/x86_64-pc-linux-gnu-library/4.2'
-#> (as 'lib' is unspecified)
-#> Warning: package 'IsoMemo' is not available for this version of R
-#> 
-#> A version of this package for your version of R might be available elsewhere,
-#> see the ideas at
-#> https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages
+#> Installiere Paket nach '/home/ljabel/R/x86_64-pc-linux-gnu-library/4.3'
+#> (da 'lib' nicht spezifiziert)
 ```
 
 And the development version from [GitHub](https://github.com/) with:
@@ -60,8 +54,8 @@ And the development version from [GitHub](https://github.com/) with:
 ``` r
 options(repos = c(getOption("repos"), PANDORA = "https://Pandora-IsoMemo.github.io/drat/"))
 install.packages("IsoMemo")
-#> Installing package into '/nethome/jroachell/R/x86_64-pc-linux-gnu-library/4.2'
-#> (as 'lib' is unspecified)
+#> Installiere Paket nach '/home/ljabel/R/x86_64-pc-linux-gnu-library/4.3'
+#> (da 'lib' nicht spezifiziert)
 ```
 
 ## Example of how to use the package:
@@ -69,8 +63,8 @@ install.packages("IsoMemo")
 ``` r
 options(repos = c(getOption("repos"), PANDORA = "https://Pandora-IsoMemo.github.io/drat/"))
 install.packages("IsoMemo")
-#> Installing package into '/nethome/jroachell/R/x86_64-pc-linux-gnu-library/4.2'
-#> (as 'lib' is unspecified)
+#> Installiere Paket nach '/home/ljabel/R/x86_64-pc-linux-gnu-library/4.3'
+#> (da 'lib' nicht spezifiziert)
 
 library(IsoMemo)
 ## basic example code

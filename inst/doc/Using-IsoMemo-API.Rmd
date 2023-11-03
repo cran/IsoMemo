@@ -23,9 +23,9 @@ getDatabaseList() # returns a character format of list of database names linked 
 ```
 
 ```{r explore data}
-df = getData(db="IntChron",category = "Location")
+df = getData(db = "IntChron", category = "Location", field = "latitude", mapping = "IsoMemo")
 # see latitude and longitude of each site
-head(df)
+summary(df)
 ```
 The function below retrieves ALL data and fields from all existing databases.
 ```{r all data}
